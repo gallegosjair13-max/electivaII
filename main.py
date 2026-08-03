@@ -1,18 +1,21 @@
+# --- FUNCIONES DE INTERFAZ ---
 def mostrar_menu():
     print("\n--- MENÚ PRINCIPAL ---")
     print("1. Saludar")
     print("2. Salir")
     opcion = input("Seleccione una opción: ")
-    # Corrección: validación básica para evitar opciones vacías
     if not opcion:
         print("Error: No ingresó ninguna opción.")
 
-def obtener_datos():
-    nombre = input("Ingrese su nombre: ")
-    print(f"Bienvenido {nombre} al sistema.")
+# --- FUNCIONES DE USUARIO ---
+def solicitar_nombre_usuario():
+    nombre_usuario = input("Ingrese su nombre: ")
+    print(f"Bienvenido {nombre_usuario} al sistema.")
 
-def ejecutar():
-    obtener_datos()
+# --- FLUJO PRINCIPAL ---
+def iniciar_programa():
+    solicitar_nombre_usuario()
     mostrar_menu()
 
-ejecutar()
+if __name__ == "__main__":
+    iniciar_programa()
