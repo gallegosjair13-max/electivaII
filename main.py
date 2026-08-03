@@ -16,6 +16,7 @@ def solicitar_nombre_usuario():
 def iniciar_programa():
     solicitar_nombre_usuario()
     mostrar_menu()
+    print("\n¡Gracias por usar el sistema! Hasta pronto.")
 
 if __name__ == "__main__":
     iniciar_programa()
