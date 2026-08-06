@@ -1,0 +1,11 @@
+# ignora temporales
+*.log
+*.tmp
+.env
+
+# entorno de trabajo
+.vscode/
+
+# archivos python
+__pycache__/
+*.pyc
