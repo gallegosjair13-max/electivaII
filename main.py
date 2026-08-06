@@ -2,10 +2,16 @@
 def mostrar_menu():
     print("\n--- MENÚ PRINCIPAL ---")
     print("1. Saludar")
-    print("2. Salir")
+    print("2. Acerca del sistema")
+    print("3. Salir")
     opcion = input("Seleccione una opción: ")
     if not opcion:
         print("Error: No ingresó ninguna opción.")
+    elif opcion == "2":
+        mostrar_informacion()
+
+def mostrar_informacion():
+    print("\nSistema desarrollado para la gestión básica en consola v1.1.")
 
 # --- FUNCIONES DE USUARIO ---
 def solicitar_nombre_usuario():
